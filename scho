@@ -1,0 +1,54 @@
+```python
+guirre_student_data = None
+
+guirre_student_id = input("Enter Student ID: ")
+
+if guirre_student_id == "S101":
+    guirre_student_data = ("S101", "Ana", "Computer Science", [95, 88, 92, 85], 95, 75, 5)
+
+elif guirre_student_id == "S102":
+    guirre_student_data = ("S102", "Mark", "Information Technology", [70, 78, 75, 80], 85, 75, 3)
+
+else:
+    print("Student Not Found.")
+
+if guirre_student_data is not None:
+
+    (
+        guirre_student_id,
+        guirre_student_name,
+        guirre_course,
+        guirre_score,
+        guirre_project,
+        guirre_average,
+        guirre_attendance
+    ) = guirre_student_data
+
+    # Calculate total quiz score
+    total_quiz_score = sum(guirre_score)
+
+    # Calculate quiz average
+    quiz_average = total_quiz_score / len(guirre_score)
+
+    # Calculate final score
+    final_score = (quiz_average + guirre_project + guirre_attendance) / 3
+
+    # Determine status
+    if final_score >= guirre_average:
+        status = "PASSED"
+    else:
+        status = "FAILED"
+
+    print("\n--- Summary ---")
+    print(f"Student ID:         {guirre_student_id}")
+    print(f"Student Name:       {guirre_student_name}")
+    print(f"Student Course:     {guirre_course}")
+    print(f"Quiz Scores:        {guirre_score}")
+    print(f"Total Quiz Score:   {total_quiz_score}")
+    print(f"Quiz Average:       {quiz_average:.2f}")
+    print(f"Project Score:      {guirre_project}")
+    print(f"Required Average:   {guirre_average}")
+    print(f"Attendance Points:  {guirre_attendance}")
+    print(f"Final Score:        {final_score:.2f}")
+    print(f"Status:             {status}")
+```
