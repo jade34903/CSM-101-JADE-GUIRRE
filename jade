@@ -1,0 +1,37 @@
+ guirre_name = input("Enter Employee ID: ")
+ if guirre_employee_id == "E100":
+     guirre_employee_data = ("Llana Uy", "JD 5", [42, 42 40, 40], 29000, 160, 500)
+elif guirre_employee_id == "E105":
+     guirre_employee_data = ("Robert", "Manager 1" [30, 35, 31, 30], 60000, 120, 500)
+else:
+    print("Employee ID not found.")
+    
+if employee found:
+    (guirre_employee_id,
+    guirre_employee_name,
+    guirre_job_rank,
+    guirre_duty_hours,
+    guirre_Basic_pay,
+    guirre_Required_hours,
+    guirre_rateper_hour,) = guirre_employee_data
+
+guirre_total_duty_hours = guirre_total_duty_hours_worked
+guirre_excess_hours = max (0, guirre_total_duty_hours - guirre_Required_hours)
+guirre_overtime_hours =guirre_excess_hours
+guirre_overtime_pay = guirre_overtime_hours * (guirre_rateper_hour * 1.5)
+gross_pay = guirre_basic_pay + guirre_overtime_pay
+
+print("\n--- Employee Summary ---")
+print(f"Employee ID:   {guirre_employee_id}")
+print(f"Employee Name:  {guirre_employee_name}")
+print(f"Job Rank:      {guirre_job_rank}")
+print(f"Duty Hours:     {guirre_total_duty_hours_worked}")
+print(f"Total Hours:     {guirre_total_duty_hours} hrs")
+print(f"Required Hours:     {guirre_Required_hours} hrs")
+print(f"Excess Hours:     {guirre_excess_hours}hrs")
+print(f"Rate Per Hours:     {guirre_rateper_hour:,.2f}")
+print(f"Overtime Rate:  {guirre_overtime_pay} hrs")
+print(f"Overtime Hours:     {(guirre_rateper_hour * 1.5):,.2f}")
+print(f"Basic Pay:     {guirre_basic_pay:,.2f}")
+print(f"Overtime Pay:     {guirre_overtime_pay:,.2f}")
+print(f"Gross Pay:      {gross_pay:,.2f}")
